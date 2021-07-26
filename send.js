@@ -23,6 +23,7 @@ function send(event, php){
   req.send(new FormData(event.target));
   }
 
+// Генератор сообщения
   const onMessage = (message, color) => {
     const alertContainer = document.createElement('div');
     alertContainer.style.zIndex = 100;
@@ -46,6 +47,7 @@ function send(event, php){
       document.body.removeChild(alertContainer);
     };
 
+    // Удаление сообщения через 5 секунд
     setTimeout(() => {
       offMessage();
     }, 5000);

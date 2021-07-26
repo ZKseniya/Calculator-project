@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="css/styles.css">
+
+  <title>Калькулятор конвертации валюты</title>
+</head>
+
+<body class="page-body">
+  <section class="calculator">
+    <div class="calculator__body">
+      <h1 class="calculator__title">Калькулятор конвертации валюты</h1>
+      <form class="calculator__form" enctype="multipart/form-data" method="post" onsubmit="send(event, 'mail.php')">
+        <label class="calculator__label" for="sum-rub">Сумма, руб</label>
+        <input class="calculator__input" type="number" id="sum-rub" name="user_currency" placeholder="1000 руб." required>
+        <label class="calculator__label" for="currencies">Выберите валюту конвертации</label>
+        <select class="calculator__select" id="currencies" name="valute" required>
+        </select>
+        <label class="calculator__label" for="sum-currency">Сумма в валюте</label>
+        <input class="calculator__input" type="number" id="sum-currency" name="conversion_currency" readonly>
+        <label class="calculator__label" for="user-email">Ваш E-mail</label>
+        <input class="calculator__input" type="email" id="user_email" name="user_mail" placeholder="example@mail.ru" required>
+        <button class="calculator__button" type="submit">Запись на обмен валюты</button>
+      </form>
+    </div>
+    <img class="calculator__img" src="./img/bg.jpg" alt="">
+  </section>
+
+  <script type="module" src="./js/main.js"></script>
+  <script src="send.js"></script>
+</body>
+
+</html>

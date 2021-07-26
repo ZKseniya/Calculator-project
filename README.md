@@ -1,2 +1,2 @@
-# Calculator-project
-# Calculator-project
+## Калькулятор конвертации валюты
+## Потестировать можно по адресу: http://rs-ups-market.ru/
